@@ -9,7 +9,7 @@ import {
 
 export const Form = () => {
   const { data: contacts } = useGetContactsQuery();
-  const [createContact, { isLoading, isSuccess }] = useCreateContactMutation();
+  const [createContact, { isLoading }] = useCreateContactMutation();
 
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
